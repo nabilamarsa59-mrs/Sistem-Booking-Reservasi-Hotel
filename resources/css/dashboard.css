@@ -1,0 +1,103 @@
+/* Tambahkan tanda bintang (*) di awal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Gunakan path relatif untuk gambar jika di Laravel */
+    background-image: url('C:\xampp\htdocs\Sistem-Booking-Reservasi-Hotel\public\images\hotel.avif'); 
+    background-attachment: fixed; /* Ubah ke fixed agar background tidak ikut scroll */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.site-wrapper {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; /* Wajib: memaksa tinggi body setinggi layar */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-logo {
+    height: 40px;     
+    width: auto;      
+    object-fit: contain; 
+}
+
+.logo-title {
+    color: #333;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    font-weight: bolder;
+    margin: 5px;
+    
+}
+
+.profile-cirle {
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+.navbar {
+    background-color: rgba(204, 204, 204, 0.8); /* Tambah transparansi agar estetik */
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #999;
+    
+}
+
+.nav-links {
+    margin: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    word-spacing: 1cm;
+    
+}
+
+.content-container {
+    flex: 1; /* INI KUNCINYA: Mengambil semua sisa ruang yang ada */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px; /* Gunakan padding, jangan margin agar background content terlihat penuh */
+}
+
+.main-box {
+    width: 80%;
+    min-height: 300px; /* Gunakan min-height agar box fleksibel */
+    background-color: rgba(204, 204, 204, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.text-placeholder {
+    font: arial, sans-serif;
+    font-weight: bold;
+    
+}
+
+.footer {
+    height: 60px;
+    background-color: rgba(55, 55, 55, 0.8); /* Warna lebih gelap agar beda dengan header */
+    color: rgb(224, 223, 223);
+    width: 100%;
+}
