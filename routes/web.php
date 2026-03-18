@@ -7,6 +7,6 @@
 Route::get('/', [HomeController::class, 'index']); 
 Route::get('/contact', [HomeController::class, 'contact']); 
 
-use app/Http/Controllers/DashboardController;
+use App/Http/Controllers/DashboardController;
 
 Route::get('/dashboard', [DashboardController::class, 'index']);
