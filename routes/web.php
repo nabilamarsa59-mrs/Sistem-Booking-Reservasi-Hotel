@@ -1,8 +1,10 @@
-<?php  use Illuminate\Support\Facades\Route; use App\Http\Controllers\HomeController; 
+<?php  use Illuminate\Support\Facades\Route; use App\Http\Controllers\HomeController; use App\Http\Controllers\DashboardController;
  
-//Route::get('/', function () { 
-  //  return view('welcome'); 
-//}); 
+Route::get('/', function () { 
+    return view('welcome'); 
+});
  
 Route::get('/', [HomeController::class, 'index']); 
 Route::get('/contact', [HomeController::class, 'contact']); 
+Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/welcome', [HomeController::class, 'index']);
